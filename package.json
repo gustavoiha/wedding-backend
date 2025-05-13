@@ -1,0 +1,35 @@
+{
+  "name": "wedding-backend",
+  "version": "1.0.0",
+  "description": "Backend for wedding RSVP application",
+  "scripts": {
+    "test": "vitest --no-file-parallelism",
+    "build": "esbuild src/server.ts --bundle --platform=node --target=node22.14 --outdir=dist",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoiha/wedding-backend.git"
+  },
+  "keywords": [
+    "wedding"
+  ],
+  "author": "Gustavo Iha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoiha/wedding-backend/issues"
+  },
+  "homepage": "https://github.com/gustavoiha/wedding-backend#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "esbuild": "^0.25.4",
+    "prisma": "^6.7.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "fastify": "^5.3.3",
+    "pg": "^8.16.0"
+  }
+}
