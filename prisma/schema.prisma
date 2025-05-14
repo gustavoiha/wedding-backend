@@ -13,4 +13,5 @@ model AttendanceConfirmation {
   email String @unique
   name String
   guests Int
+  phone String @unique
 }

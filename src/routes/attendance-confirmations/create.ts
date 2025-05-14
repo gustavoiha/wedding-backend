@@ -5,7 +5,8 @@ const db = DatabaseConnect.getInstance()
 interface CreateAttendanceConfirmation {
   email: string,
   name: string,
-  guests: number
+  guests: number,
+  phone: string
 }
 
 export default async (data: CreateAttendanceConfirmation) => {
